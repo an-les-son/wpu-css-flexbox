@@ -1,0 +1,62 @@
+/* Flex Box */
+/* model layout 1 dimensi yang dapat mengatur jarak dan penjajaran antar item dalam sebuah container
+    sebuah modul yang menawarkan cara yang efektif untuk menyusun, mensejajarkan dan mendistribusikan jarak antar item didalam sebuah container, meskipun ukurannya dinamis atau bahkan kita tidak tau */
+/* - main axis ialah sumbu utama dari sebuah container yang menentukan urutan dari penempatan items secara horizontal.
+- main-start | main-end ialah mulai dan berakhirnya items yang disimpan di dalam container.
+- main size ialah ukuran (width / height) dari container yang akan mebuat dimensi dari items  nya relatif terhadap main size.
+ - dan perbedan antara main dan cross, cross memiliki penemparan items secara vertikal*/
+
+.container,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+  width: 600px;
+  height: 100px;
+  border: 3px solid black;
+  margin: 30px auto;
+  padding: 5px;
+  display: flex;
+}
+
+.container {
+  justify-content: flex-start;
+}
+
+.container2 {
+  justify-content: flex-end;
+}
+
+.container3 {
+  justify-content: center;
+}
+
+.container4 {
+  justify-content: space-between;
+}
+
+.container5 {
+  justify-content: space-around;
+}
+
+.container6 {
+  justify-content: space-evenly;
+}
+
+.satu,
+.dua,
+.tiga,
+.empat {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(2, 160, 252);
+  color: white;
+  margin-left: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+h6 {
+  text-align: center;
+}
